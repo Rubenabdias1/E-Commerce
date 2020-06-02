@@ -9,6 +9,11 @@ const Header = ({ currentUser }) => (
     <Link to="/">
       <Logo className="logo"></Logo>
     </Link>
+    {currentUser ? (
+      <Link to="/">
+        <img className="userPhoto" alt="userPhoto" src={currentUser.photoURL} />
+      </Link>
+    ) : null}
     <div className="options">
       <Link className="option" to="/shop">
         SHOP
