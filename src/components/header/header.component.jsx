@@ -10,7 +10,7 @@ const Header = ({ currentUser }) => (
     <Link to="/">
       <Logo className="logo"></Logo>
     </Link>
-    {currentUser ? (
+    {currentUser && currentUser.photoURL ? (
       <Link to="/">
         <img className="userPhoto" alt="userPhoto" src={currentUser.photoURL} />
       </Link>
