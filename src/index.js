@@ -7,7 +7,6 @@ import App from "./App";
 import { store, persistor } from "./redux/store";
 import "./index.css";
 
-document.title = "E-Commerce App";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
