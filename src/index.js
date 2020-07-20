@@ -9,7 +9,7 @@ import "./index.css";
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/ecommerce">
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>
